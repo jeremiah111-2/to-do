@@ -1,0 +1,9 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<div class="update">
+    <form method="POST">
+       {% csrf_token %}
+       {{myform}}
+       <input type="submit">
+    </form>
+</div>
